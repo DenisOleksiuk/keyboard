@@ -1,0 +1,220 @@
+/*DIV - Keyboard*/
+body {
+    background: #f2f2f2;
+}
+
+#keyboard {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    float: left;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    -webkit-user-select: none;
+    font-size: 12px;
+    text-align: center;
+    line-height: 34px;
+    background: rgba(40, 40, 40, 1);
+    box-shadow: inset 0px -1px 2px rgba(255, 255, 255, .3);
+    border: 1px solid rgba(0, 0, 0, .4);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    margin-top: -2px;
+    font-family: Arial;
+}
+
+.sub {
+    position: absolute;
+    top: -8px;
+    left: 6px;
+}
+.char {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    transform: scale(.8);
+}
+.sub.dog {
+    font-size: 8px;
+    top: -9px;
+}
+.sub.underscore {
+    left: 12px;
+    top: -14px;
+}
+
+.key:hover {
+    background: #0099CC;
+    cursor: pointer;
+    transition: 0s ease-in-out 0s;
+    box-shadow: 0px 0px 10px #0099cc;
+}
+
+#voice:hover {
+    background: #d5144c;
+    box-shadow: 0px 0px 10px #d5144c;
+}
+#voice:active {
+    background: #ff2967;
+    box-shadow: 0px 0px 10px #ff2967;
+}
+.voice-active {
+    line-height: 35px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #ff2967;
+    top: 1px;
+    transition: 0s ease-in-out 0s;
+}
+
+.audio-active {
+    line-height: 35px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #00b2ed;
+    top: 1px;
+    transition: 0s ease-in-out 0s;
+}
+
+.key:active::after {
+    bottom: 3px;
+    box-shadow: inset 0px -1px 1px rgba(255, 255, 255, .5), 0px 10px 8px rgba(0, 0, 0, .3), 0px 1px 4px rgba(255, 255, 255, .5);
+}
+
+.key:active {
+    line-height: 35px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #00b2ed;
+    top: 1px;
+    transition: 0s ease-in-out 0s;
+}
+
+.key::after {
+    content: "";
+    position: absolute;
+    border-radius: 4px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 4px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: inset 0px -1px 1px rgba(255, 255, 255, .5), 0px 10px 8px rgba(0, 0, 0, .3);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.4)));
+}
+
+.key::before {
+    content: "";
+    position: absolute;
+    border-radius: 4px;
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+}
+
+#keyboard {
+    width: 640px;
+    height: 200px;
+    position: relative;
+    z-index: 100;
+    top: 220px;
+}
+
+.smallfont {
+    font-size: 10px;
+}
+
+.caps-active {
+    line-height: 35px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #00b2ed;
+    top: 1px;
+    transition: 0s ease-in-out 0s;
+}
+
+#delete {
+    width: 92px;
+}
+
+#tab {
+    width: 92px;
+}
+
+#caps {
+    width: 87px;
+}
+
+#enter {
+    width: 87px;
+}
+
+#shift {
+    width: 108px;
+}
+
+#audio {
+    width: 50px;
+}
+
+#voice {
+    width: 50px;
+}
+
+#win {
+    width: 50px;
+}
+
+#alt {
+    width: 60px;
+}
+
+#space {
+    width: 190px;
+}
+
+#arrow {
+    height: 40px;
+    width: 126px;
+    float: left;
+}
+
+#updown {
+    height: 40px;
+    width: 42px;
+    float: left;
+}
+
+#horizontal {
+    height: 20px;
+    margin-top: 18px;
+    line-height: 16px;
+}
+
+#vertical {
+    height: 20px;
+    bottom: 0px;
+    line-height: 16px;
+}
+
+.output {
+    position: relative;
+    z-index: 100;
+    display: block;
+    margin: auto;
+    width: 630px;
+    height: 170px;
+    top: 60px;
+    resize: none;
+    letter-spacing: 2px;
+}
